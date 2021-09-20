@@ -8,7 +8,14 @@ import os
 #plt.style.use("fivethirtyeight") # THIS IS STYLE OF GRAPHS
 
 def prepare_data(df):
-  
+  """It is sused to separate dependent features and independent features
+
+  Args:
+      df (pd.DataFrame): its pandas DataFrame
+
+  Returns:
+      tuple: its returns the separated features
+  """
   X = df.drop("y", axis=1)
   y = df["y"]
   return X, y
