@@ -4,7 +4,7 @@ from utils.constants import OR, EPOCHS, ETA
 import pandas as pd
 import numpy as np
 
-def main(AND, EPOCHS, ETA):
+def main(OR, EPOCHS, ETA):
 
     df = pd.DataFrame(OR)
     print(df)
